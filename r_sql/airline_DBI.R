@@ -33,28 +33,36 @@ planes <- read.csv("/Users/agataszkoda/Documents/Studia Data Science and Busines
 dbWriteTable(con, "planes", planes, overwrite = TRUE)
 
 # Which of the following airplanes has the lowest associated average departure delay (excluding cancelled and diverted flights)?
-dbGetQuery(con, 
+q1 <- dbGetQuery(con, 
 "SELECT model AS model, AVG(ontime.DepDelay) AS avg_delay
 FROM planes JOIN ontime USING(tailnum)
 WHERE ontime.Cancelled = 0 AND ontime.Diverted = 0 AND ontime.DepDelay > 0
 GROUP BY model
 ORDER BY avg_delay")
+q1
+write.csv(q1, "q1_DBI.csv", row.names = FALSE)
+
 
 # Which of the following cities has the highest number of inbound flights (excluding cancelled flights)?
-dbGetQuery(con, 
+q2 <- dbGetQuery(con, 
 "SELECT airports.city AS city, COUNT(*) AS total
 FROM airports JOIN ontime ON ontime.dest = airports.iata
 WHERE ontime.Cancelled = 0
 GROUP BY airports.city
 ORDER BY total DESC")
+q2
+write.csv(q2, "q2_DBI.csv", row.names = FALSE)
 
 # Which of the following companies has the highest number of cancelled flights?
-dbGetQuery(con, 
+q3 <- dbGetQuery(con, 
 "SELECT carriers.Description AS carrier, COUNT(*) AS total
 FROM carriers JOIN ontime ON ontime.UniqueCarrier = carriers.Code
 WHERE ontime.Cancelled = 1
 AND carriers.Description IN ('United Air Lines Inc.', 'American Airlines Inc.', 'Pinnacle Airlines Inc.', 'Delta Air Lines Inc.')
 GROUP BY carriers.Description
 ORDER BY total DESC")
+q3
+write.csv(q3, "q3_DBI.csv", row.names = FALSE)
 
 dbDisconnect(con)
+

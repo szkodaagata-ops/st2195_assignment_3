@@ -46,18 +46,21 @@ q1 <- inner_join (ontime_db, planes_db, by = c("TailNum"="tailnum")) %>%
   summarize(avg_dep_delay = mean(DepDelay, na.rm = TRUE)) %>%
   arrange(avg_dep_delay)
 q1
+write.csv(q1, "q1_dplyr.csv", row.names = FALSE)
 
 # Which of the following cities has the highest number of inbound flights (excluding cancelled flights)?
 q2 <- inner_join (airports_db, ontime_db, by = c("iata"="Dest")) %>%
   filter (Cancelled == 0) %>%
   count(city, sort = TRUE)
 q2
+write.csv(q2, "q2_dplyr.csv", row.names = FALSE)
 
 # Which of the following companies has the highest number of cancelled flights?
 q3 <- inner_join (carriers_db, ontime_db, by = c("Code"="UniqueCarrier")) %>%
   filter (Cancelled == 1, Description %in% c("United Air Lines Inc.", "American Airlines Inc.", "Pinnacle Airlines Inc.", "Delta Air Lines Inc.")) %>%
   count(Description, sort = TRUE)
 q3
+write.csv(q3, "q3_dplyr.csv", row.names = FALSE)
 
 dbDisconnect(con)
 
