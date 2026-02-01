@@ -86,4 +86,16 @@ q4 <- dbGetQuery(con,
 q4
 write.csv(q4, "q4_DBI.csv", row.names = FALSE)
 
+q4_simplified <- dbGetQuery(con,
+                            "select 
+                            carriers.Description as carrier,
+                            sum(case when ontime.Cancelled = 1 then 1 else 0 end) *1.0/count (*) cancelled_ratio
+                            FROM carriers 
+                            JOIN ontime ON ontime.UniqueCarrier = carriers.Code
+                            where carriers.Description IN ('United Air Lines Inc.', 'American Airlines Inc.', 'Pinnacle Airlines Inc.', 'Delta Air Lines Inc.')
+                            group by carriers.Description
+                            order by cancelled_ratio desc")
+q4_simplified
+write.csv(q4_simplified, "q4_DBI_simplified.csv", row.names = FALSE)
+
 dbDisconnect(con)
