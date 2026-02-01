@@ -1,0 +1,302 @@
+city,total
+Chicago,1051340
+Atlanta,937377
+Dallas-Fort Worth,671820
+Houston,609759
+New York,547471
+Denver,541454
+Los Angeles,537075
+Phoenix,488778
+Las Vegas,424245
+Detroit,353876
+Newark,348673
+Salt Lake City,334952
+Minneapolis,321833
+San Francisco,309281
+Orlando,292007
+Boston,290499
+Charlotte,281250
+Covington,263711
+Baltimore,248437
+Seattle,247907
+Philadelphia,240474
+San Diego,219304
+Chantilly,206971
+Arlington,206729
+Cleveland,183645
+Tampa,182490
+Oakland,170011
+Ft. Lauderdale,160939
+Memphis,156617
+Portland,152008
+Miami,150943
+Honolulu,147126
+St Louis,147080
+Raleigh,142494
+San Jose,140590
+Kansas City,140519
+Nashville,138983
+Sacramento,129217
+Dallas,119681
+Santa Ana,119301
+Austin,111851
+Pittsburgh,109288
+San Antonio,103277
+Indianapolis,93949
+Albuquerque,91232
+Ontario,90569
+Columbus,87790
+New Orleans,80268
+Jacksonville,79840
+Burbank,74857
+Windsor Locks,74488
+West Palm Beach,68714
+Ft. Myers,65400
+Milwaukee,62778
+Tucson,62761
+Reno,62186
+Buffalo,61037
+Omaha,59082
+Providence,58603
+Oklahoma City,56737
+San Juan,56473
+Kahului,55848
+Tulsa,53798
+El Paso,50766
+Birmingham,49942
+Louisville,48549
+Manchester,48167
+Rochester,46789
+Norfolk,44829
+Richmond,44624
+Anchorage,44201
+Boise,40785
+Charleston,40169
+Colorado Springs,39468
+Little Rock,38296
+Grand Rapids,37130
+Albany,36808
+Jackson,36783
+Des Moines,35661
+Spokane,35357
+Fresno,35165
+Lihue,34018
+Dayton,33555
+Kailua/Kona,33480
+Santa Barbara,32572
+Greensboro,32526
+Long Beach,31760
+Wichita,31342
+Palm Springs,31135
+Savannah,31134
+Madison,29754
+Fayetteville/Springdale/Rogers,29248
+Syracuse,29233
+Greer,27668
+Knoxville,27609
+Islip,27365
+Springfield,26891
+Columbia,24965
+Baton Rouge,24285
+Pensacola,23141
+White Plains,22154
+Cedar Rapids,21931
+Lexington,21903
+Akron,21349
+Lubbock,20562
+Huntsville,20470
+Hilo,19464
+Monterey,19251
+Harrisburg,18857
+Shreveport,18392
+Midland,18318
+Amarillo,18118
+Moline,18012
+Green Bay,17999
+Flint,17697
+Sarasota,17630
+Corpus Christi,17055
+Gulfport-Biloxi,16922
+Burlington,15902
+San Luis Obispo,15794
+Valparaiso,15394
+Myrtle Beach,15178
+Eugene,14542
+Sioux Falls,14455
+Medford,14406
+Mobile,13588
+Newport News,13424
+Fort Wayne,13000
+Lafayette,12451
+Bakersfield,12423
+Harlingen,12175
+Allentown,12051
+,11620
+Appleton,11600
+Bozeman,11553
+Fargo,11475
+Peoria,11341
+Killeen,11257
+Evansville,11223
+Fairbanks,11213
+Grand Junction,11146
+Rapid City,11049
+McAllen,10856
+Billings,10671
+Kalamazoo,10610
+Lansing,10461
+Aspen,10429
+Chattanooga,10331
+Juneau,9964
+Bloomington,9956
+Durango,9077
+Bangor,8997
+Wilmington,8867
+Missoula,8792
+Roanoke,8696
+Tallahassee,8687
+Traverse City,8682
+Daytona Beach,8581
+Redmond,8493
+Montgomery,8420
+Newburgh,8382
+Arcata/Eureka,8377
+St George,8252
+Yuma,8180
+Casper,8015
+Eagle,7880
+Lincoln,7850
+Asheville,7765
+South Bend,7733
+Saginaw,7233
+Idaho Falls,7210
+Charlotte Amalie,7171
+Panama City,7067
+Great Falls,7056
+Hailey,6883
+Kalispell,6716
+Champaign/Urbana,6682
+Abilene,6391
+Alexandria,6383
+Hayden,6369
+Bismarck,6203
+Montrose,6198
+Modesto,6150
+Monroe,6144
+Wilkes-Barre/Scranton,6072
+Toledo,6062
+Pasco,5895
+Laredo,5843
+Ketchikan,5442
+Waco,5343
+Fort Smith,5263
+Wichita Falls,5247
+Augusta,5134
+Lawton,5113
+Twin Falls,5034
+Melbourne,4868
+La Crosse,4580
+Gainesville,4498
+Fayetteville,4443
+Redding,4356
+Brownsville,4309
+Pocatello,4274
+Elko,4063
+Santa Maria,4042
+Flagstaff,4000
+Helena,3988
+San Angelo,3984
+College Station,3932
+Duluth,3821
+Tyler,3808
+Dothan,3673
+Charlottesville,3642
+Oxnard,3337
+Mosinee,3313
+Bristol,3227
+Aguadilla,3182
+Dubuque,3085
+Chico,3005
+Cody,2979
+Sitka,2963
+Imperial,2889
+Lake Charles,2887
+Gunnison,2745
+Erie,2614
+Texarkana,2604
+Minot,2508
+Key West,2506
+Valdosta,2463
+Kotzebue,2463
+Longview,2456
+Nome,2447
+Grand Forks,2447
+Bethel,2446
+Crescent City,2294
+Macon,2287
+Brunswick,2264
+Inyokern,2215
+Columbus-Starkville-West Point,2158
+Lynchburg,2057
+Ponce,1918
+Binghamton,1830
+Meridian,1811
+Butte,1792
+Cordova,1668
+Petersburg,1655
+Wrangell,1646
+Yakutat,1645
+Lewiston,1633
+Barrow,1605
+Elmira,1599
+Florence,1557
+Atlantic City,1540
+Rockford,1497
+Deadhorse,1490
+Kodiak,1418
+Tupelo,1276
+Naples,1268
+Christiansted,1101
+Bellingham,1098
+New Bern,903
+Huntington,903
+Beaumont/Port Arthur,832
+Trenton,813
+Kinston,697
+Salem,620
+Palmdale,597
+Telluride,589
+Yakima,587
+King Salmon,581
+Cedar City,580
+Sioux City,557
+West Yellowstone,526
+Pellston,525
+Roswell,495
+Nantucket,490
+Hancock,391
+Dillingham,386
+Lewisburg,381
+Waterloo,350
+Pinehurst/Southern Pines,311
+Rhinelander,230
+Adak,221
+International Falls,198
+Gustavus,169
+Marathon,126
+Bemidji,115
+Gillette,96
+Eau Claire,66
+Rock Springs,64
+Muskegon,64
+Hickory,36
+Ogden,13
+Cheyenne,10
+Provo,8
+Pueblo,4
+Pierre,4
+New Haven,3
+Greenville,2
+Scottsbluff,1
+North Platte,1
+Laramie,1

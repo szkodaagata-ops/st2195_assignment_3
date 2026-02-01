@@ -64,5 +64,26 @@ ORDER BY total DESC")
 q3
 write.csv(q3, "q3_DBI.csv", row.names = FALSE)
 
-dbDisconnect(con)
+# Which of the following companies has the highest number of cancelled flights, relative to their number of total flights?
+q4 <- dbGetQuery(con,
+                 "SELECT 
+                 q1.carrier AS carrier, 
+                 (CAST(q1.numerator AS FLOAT)/ CAST(q2.denominator AS FLOAT)) AS ratio 
+                 FROM 
+                 (SELECT 
+                 carriers.Description AS carrier, 
+                 COUNT(*) AS numerator 
+                 FROM carriers 
+                 JOIN ontime ON ontime.UniqueCarrier = carriers.Code WHERE ontime.Cancelled = 1 AND carriers.Description IN ('United Air Lines Inc.', 'American Airlines Inc.', 'Pinnacle Airlines Inc.', 'Delta Air Lines Inc.') 
+                 GROUP BY carriers.Description) AS q1 
+                 JOIN 
+                 (SELECT 
+                 carriers.Description AS carrier, COUNT(*) AS denominator 
+                 FROM carriers 
+                 JOIN ontime ON ontime.UniqueCarrier = carriers.Code WHERE carriers.Description IN ('United Air Lines Inc.', 'American Airlines Inc.', 'Pinnacle Airlines Inc.', 'Delta Air Lines Inc.') 
+                 GROUP BY carriers.Description) AS q2 USING(carrier) 
+                 ORDER BY ratio DESC")
+q4
+write.csv(q4, "q4_DBI.csv", row.names = FALSE)
 
+dbDisconnect(con)
